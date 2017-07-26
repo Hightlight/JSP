@@ -56,7 +56,7 @@ _程序示例：_
 ## JSP注释
 _JSP注释主要有两个作用：为代码作注释以及将某段代码注释掉。JSP注释的语法格式：_
 
-`
+```````
 <body>
 <%-- 该部分注释在网页中不会被显示--%> 
 <p>
@@ -64,6 +64,31 @@ _JSP注释主要有两个作用：为代码作注释以及将某段代码注释�
 </p>
 </body> 
 </html> 
-`
+```````
+## JSP表达式
+_一个JSP表达式中包含的脚本语言表达式，先被转化成String，然后插入到表达式出现的地方。由于表达式的值会被转化成String，所以您可以在一个文本行中使用表达式而不用去管它是否是HTML标签。表达式元素中可以包含任何符合Java语言规范的表达式，但是不能使用分号来结束表达式。_
+_JSP表达式的语法格式：_
+
+`<%= 表达式 %>`
+
+_程序示例：_
+
+``````````````
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<p>
+   今天的日期是: <%= (new java.util.Date()).toLocaleString()%>
+</p>
+</body> 
+</html> 
+``````````````
+
 
 
