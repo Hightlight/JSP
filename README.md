@@ -99,9 +99,11 @@ _指令可以有很多个属性，它们以键值对的形式存在，并用逗�
 
 _JSP中的三种指令标签：_
 
-```<%@ page ... %>	      定义网页依赖属性，比如脚本语言、error页面、缓存需求等等
+```
+<%@ page ... %>	      定义网页依赖属性，比如脚本语言、error页面、缓存需求等等
 <%@ include ... %>	   包含其他文件
-<%@ taglib ... %>	   引入标签库的定义```
+<%@ taglib ... %>	   引入标签库的定义
+```
 
 ### Page指令
 _Page指令为容器提供当前页面的使用说明。一个JSP页面可以包含多个page指令。Page指令的语法格式：_
@@ -111,29 +113,29 @@ _Page指令为容器提供当前页面的使用说明。一个JSP页面可以包
 #### 属性
 _下表列出与Page指令相关的属性：_
 
--**buffer**：         指定out对象使用缓冲区的大小
+- **buffer**：         指定out对象使用缓冲区的大小
 
--**autoFlush**：      控制out对象的 缓存区
+- **autoFlush**：      控制out对象的 缓存区
 
--**contentType**：	   指定当前JSP页面的MIME类型和字符编码
+- **contentType**：	   指定当前JSP页面的MIME类型和字符编码
 
--**errorPage**：	指定当JSP页面发生异常时需要转向的错误处理页面
+- **errorPage**：	指定当JSP页面发生异常时需要转向的错误处理页面
 
--**isErrorPage**：	指定当前页面是否可以作为另一个JSP页面的错误处理页面
+- **isErrorPage**：	指定当前页面是否可以作为另一个JSP页面的错误处理页面
 
--**extends**：	指定servlet从哪一个类继承
+- **extends**：	指定servlet从哪一个类继承
 
--**import**：导入要使用的Java类
+- **import**：导入要使用的Java类
 
--**info**：	定义JSP页面的描述信息
+- **info**：	定义JSP页面的描述信息
 
--**isThreadSafe**：	指定对JSP页面的访问是否为线程安全
+- **isThreadSafe**：	指定对JSP页面的访问是否为线程安全
 
-_**language**：	定义JSP页面所用的脚本语言，默认是Java
+- **language**：	定义JSP页面所用的脚本语言，默认是Java
 
-_**session**：	指定JSP页面是否使用session
+- **session**：	指定JSP页面是否使用session
 
-_**isELIgnored**：	指定是否执行EL表达式
+- **isELIgnored**：	指定是否执行EL表达式
 
-_**isScriptingEnabled**：	确定脚本元素能否被使用
+- **isScriptingEnabled**：	确定脚本元素能否被使用
 
